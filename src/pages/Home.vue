@@ -28,8 +28,7 @@
     name: 'Home',
     data () {
       return {
-        msg: 'Welcome to Your Vue.js App',
-        hah: 'ijdis'
+        msg: 'Welcome to Your Vue.js App'
       }
     },
     components: {
