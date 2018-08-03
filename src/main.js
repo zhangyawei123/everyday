@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store'
+import axios from 'axios'
 
 import './assets/scss/reset.css'
 import ElementUI from 'element-ui';
@@ -13,6 +14,11 @@ Vue.use(ElementUI);
 
 
 Vue.config.productionTip = false;
+Vue.prototype.axios = axios;
+
+// 引入mockjs
+// require('./mock.js');
+import './mock.js';
 
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {//判断是否有标题

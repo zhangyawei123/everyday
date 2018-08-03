@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+  <script src="https://cdn.bootcss.com/Mock.js/1.0.1-beta3/mock.js"></script>
 </head>
 <body>
   <header>header</header>
   <main>main</main>
   <footer>footer</footer>
   <script>
-  	let arr = [{name: 'haha',age: 12},{name: 'didi',age: 120}],
-  		sexs = ['man','ss'],
-  		len = arr.length,
-  		i = 0;
-  		for (; i < len; i++) {
-  			arr[i].sex = sexs[i];
-  		}
-  		arr.forEach(function (item,index) {
-  			item.sex = sexs[index];
-  		})
-  		console.log(arr);
+    const Random = Mock.Random;
+  	console.log(Random.url('http'));
+  	const image = document.createElement('img');
+    image.src=Random.dataImage()
+  	image.onload = function () {
+      document.body.appendChild(image)
+    }
   </script>
 </body>
 </html>

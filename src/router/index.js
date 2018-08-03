@@ -7,6 +7,8 @@ import KeepAlive from '@/pages/KeepAlive'
 import SlotC from '@/pages/SlotC'
 import Dialog from '@/pages/Dialog'
 import MapGaode from '@/pages/MapGaode'
+import Mock from '@/pages/Mock'
+import Upload from '@/pages/Upload'
 
 Vue.use(Router);
 
@@ -60,6 +62,27 @@ export default new Router({
       component: MapGaode,
       meta: {
         title: '高德地图'
+      }
+    },
+    {
+      path: '/mock',
+      component: Mock,
+      meta: {
+        title: 'mock模拟数据'
+      }
+    },
+    {
+      path: '/upload',
+      component: Upload,
+      meta: {
+        title: '上传'
+      }
+    },
+    {
+      path: '/test',
+      component: () => import('@/pages/test'),
+      meta: {
+        title: '测试页面'
       }
     },
   ]
