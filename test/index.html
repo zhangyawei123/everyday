@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <title>Title</title>
   <script src="https://cdn.bootcss.com/Mock.js/1.0.1-beta3/mock.js"></script>
+  <script src="rem.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-size: .24rem;
+    }
+    .header {
+      width: 7.5rem;
+      height: 1rem;
+      background: #f0f0f0;
+      border-bottom: 1px solid #000;
+      /*font-size: .12rem;*/
+    }
+    /*div {font-size: 12px;}*/
+    /*[data-dpr="2"] div {font-size: 24px;}*/
+    /*[data-dpr="3"] div {font-size: 36px;}*/
+  </style>
 </head>
 <body>
-  <header>header</header>
-  <main>main</main>
-  <footer>footer</footer>
-  <script>
-    const Random = Mock.Random;
-  	console.log(Random.url('http'));
-  	const image = document.createElement('img');
-    image.src=Random.dataImage()
-  	image.onload = function () {
-      document.body.appendChild(image)
-    }
-  </script>
+  <div class="header">header</div>
+
 </body>
 </html>
