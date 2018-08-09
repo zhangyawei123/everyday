@@ -10,6 +10,7 @@
       <li><router-link to="/mock">mock数据</router-link></li>
       <li><router-link to="/upload">图片上传</router-link></li>
       <li><router-link to="/test">测试页面</router-link></li>
+      <li><router-link to="/zrender">zrender</router-link></li>
     </ul>
     <!--<SlotC>-->
       <!--<template slot="header">-->

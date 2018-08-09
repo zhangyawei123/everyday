@@ -85,5 +85,12 @@ export default new Router({
         title: '测试页面'
       }
     },
+    {
+      path: '/zrender',
+      component: () => import('@/pages/Zrender'),
+      meta: {
+        title: 'zrender'
+      }
+    },
   ]
 })
