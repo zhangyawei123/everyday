@@ -6,13 +6,16 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 
-import 'lib-flexible'
+// import 'lib-flexible'
 import './assets/scss/reset.css'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 
-Vue.use(ElementUI);
+import vuexI18n from 'vuex-i18n';
 
+Vue.use(ElementUI);
+Vue.use(vuexI18n.plugin, store);
+Vue.i18n.set('zh-CN');
 
 Vue.config.productionTip = false;
 Vue.prototype.axios = axios;

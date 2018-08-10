@@ -92,5 +92,12 @@ export default new Router({
         title: 'zrender'
       }
     },
+    {
+      path: '/vuxindex',
+      component: () => import('@/pages/vuxpages/index'),
+      meta: {
+        title: 'vux-demo'
+      }
+    },
   ]
 })
