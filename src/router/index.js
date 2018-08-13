@@ -10,7 +10,7 @@ import MapGaode from '@/pages/MapGaode'
 import Mock from '@/pages/Mock'
 import Upload from '@/pages/Upload'
 
-Vue.use(Router);
+Vue.use(Router)
 
 export default new Router({
   routes: [
@@ -91,7 +91,7 @@ export default new Router({
       meta: {
         title: 'zrender'
       }
-    },
+    }
     // {
     //   path: '/vuxindex',
     //   component: () => import('@/pages/vuxpages/index'),

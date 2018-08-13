@@ -36,11 +36,11 @@
         msg: 'Welcome to Your Vue.js App'
       }
     },
-    created() {
+    created () {
 
     },
     components: {
-      SlotC,Echart
+      SlotC, Echart
     },
     methods: {
 

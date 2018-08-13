@@ -7,31 +7,21 @@
 </template>
 
 <script>
-  import axios from 'axios'
-    export default {
-        props: ['name','url'],
-        name: "Alert",
-        data() {
-          return {
-            msg: ''
-          }
-        },
-        mounted() {
-          // this.getData()
-        },
-        methods: {
-          getData() {
-            axios({
-              method:'get',
-              url:'http://127.0.0.1:8081/' + this.url,
-            })
-              .then(res=> {
-                console.log(res.data);
-                this.msg = res.data;
-              })
-          }
-        }
+  export default {
+    props: ['name'],
+    name: 'Alert',
+    data () {
+      return {
+        msg: ''
+      }
+    },
+    mounted () {
+
+    },
+    methods: {
+
     }
+  }
 </script>
 
 <style scoped>

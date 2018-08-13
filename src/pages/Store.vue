@@ -25,24 +25,24 @@
     import { mapGetters } from 'vuex'
     import {Input} from 'element-ui'
     export default {
-      name: "Store",
-      data() {
-          return {
-            mes: 'hello lal'
-          }
+      name: 'Store',
+      data () {
+        return {
+          mes: 'hello lal'
+        }
       },
       computed: mapState({
-        count: state=> state.count,
-        mesRev() {
+        count: state => state.count,
+        mesRev () {
           return this.mes.split('').reverse().join('')
         }
       }),
-      mounted() {
+      mounted () {
 
       },
       methods: {
-        add() {
-          this.$store.commit('increment',3)
+        add () {
+          this.$store.commit('increment', 3)
         }
       }
     }

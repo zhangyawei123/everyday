@@ -17,13 +17,13 @@
 
 <script>
     export default {
-        name: "KeepAlive",
-      data() {
-          return {
-            currentPage: 1,
-            inputValue: '',
-            active: false,
-          }
+      name: 'KeepAlive',
+      data () {
+        return {
+          currentPage: 1,
+          inputValue: '',
+          active: false
+        }
       }
     }
 </script>
@@ -39,7 +39,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    width: 0px;
+    width: 0;
     border-top: 3px solid #00f;
     transform-origin: 0 50%;
     transition: all .3s;

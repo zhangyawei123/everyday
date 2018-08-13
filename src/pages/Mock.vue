@@ -55,8 +55,8 @@
 
 <script>
   export default {
-    name: "Mock",
-    data() {
+    name: 'Mock',
+    data () {
       return {
         list: [],
         tableData: [{
@@ -90,14 +90,14 @@
         }]
       }
     },
-    created() {
+    created () {
       // this.getData();
     },
     methods: {
-      getData() {
+      getData () {
         this.axios.get('http://127.0.0.1:9428/warn_info')
-          .then(res=> {
-            console.log(res.data);
+          .then(res => {
+            console.log(res.data)
           })
         // this.axios.get('/news/index')
         //   .then(res=> {
@@ -105,12 +105,12 @@
         //     this.list = [...res.data.articles]
         //   })
       },
-      handleDelete(index, row) {
-        console.log(row.address);
-        this.tableData.splice(index,1)
+      handleDelete (index, row) {
+        console.log(row.address)
+        this.tableData.splice(index, 1)
       },
-      handleClick(row) {
-        console.log(row);
+      handleClick (row) {
+        console.log(row)
       }
     }
   }

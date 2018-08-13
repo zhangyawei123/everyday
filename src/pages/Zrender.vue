@@ -7,21 +7,21 @@
 <script>
   import zrender from 'zrender'
   export default {
-    name: "Zrender",
-    data() {
+    name: 'Zrender',
+    data () {
       return {
         zr: '',
         circle: ''
       }
     },
-    mounted() {
-      this.zrInit();
-      this.circle.shape.r = 100;
+    mounted () {
+      this.zrInit()
+      this.circle.shape.r = 100
       console.log(this.circle.shape.r)
     },
     methods: {
-      zrInit() {
-        this.zr = zrender.init(document.getElementById('main'));
+      zrInit () {
+        this.zr = zrender.init(document.getElementById('main'))
         this.circle = new zrender.Circle({
           shape: {
             cx: 150,
@@ -32,8 +32,8 @@
             fill: 'none',
             stroke: '#F00'
           }
-        });
-        this.zr.add(this.circle);
+        })
+        this.zr.add(this.circle)
       }
     }
   }

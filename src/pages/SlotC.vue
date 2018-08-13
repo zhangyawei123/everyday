@@ -23,28 +23,28 @@
 
 <script>
     export default {
-      name: "SlotC",
-      props:['msg'],
-      data() {
+      name: 'SlotC',
+      props: ['msg'],
+      data () {
         return {
           msg: '子组件的内容'
         }
       },
       methods: {
-        handleSizeChange(val) {
-          console.log(`每页 ${val} 条`);
+        handleSizeChange (val) {
+          console.log(`每页 ${val} 条`)
         },
-        handleCurrentChange(val) {
-          console.log(`当前页: ${val}`);
+        handleCurrentChange (val) {
+          console.log(`当前页: ${val}`)
         }
       },
-      data() {
+      data () {
         return {
           currentPage1: 5,
           currentPage2: 5,
           currentPage3: 5,
           currentPage4: 4
-        };
+        }
       }
     }
 </script>

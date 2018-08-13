@@ -8,21 +8,21 @@ import axios from 'axios'
 
 // import 'lib-flexible'
 import './assets/scss/reset.css'
-import ElementUI from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
-import vuexI18n from 'vuex-i18n';
+import vuexI18n from 'vuex-i18n'
 
-Vue.use(ElementUI);
-Vue.use(vuexI18n.plugin, store);
-Vue.i18n.set('zh-CN');
+Vue.use(ElementUI)
+Vue.use(vuexI18n.plugin, store)
+Vue.i18n.set('zh-CN')
 
-Vue.config.productionTip = false;
-Vue.prototype.axios = axios;
+Vue.config.productionTip = false
+Vue.prototype.axios = axios
 
 // 引入mockjs
 // require('./mock.js');
-import './mock.js';
+import './mock.js'
 
 router.beforeEach((to, from, next) => {
   if (to.meta.title) {//判断是否有标题
